@@ -9,8 +9,7 @@ from pathlib import Path
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-
-MODEL_DIR = Path(__file__).parent / "models"
+MODEL_DIR = Path(__file__).parent
 
 naive_bayes_model = joblib.load(
     MODEL_DIR / "naive_bayes_model.pkl"
